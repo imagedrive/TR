@@ -220,13 +220,15 @@ ul.sc-notes {
 <dl>
 <dt>公開日:</dt>
 <dd>2017年11月21日</dd>
+<dt>改定日:</dt>
+<dd>2017年12月11日</dd>
 <dt>翻訳者:</dt>
 <dd>Wataru Yoshimura</dd>
 </dl>
 </div>
 
 <div class="gl-only">
-<p align="center">[<a href="#toc">目次</a>] | [<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/">UAAG 2.0 参考文献</a>]</p>
+<p align="center">[<a href="#toc">目次</a>] | [<a href="../UAAG20-Reference/">UAAG 2.0 参考文献</a>]</p>
 <div class="head">
 <a href="http://www.w3.org/"><img height="48"
 src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
@@ -277,7 +279,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 
 <ul>
 <li>UAAG 2.0 は 2013年に<a href="http://www.w3.org/TR/2013/WD-UAAG20-20131107/">最終草案</a>を完了し、UAWG はコメントに応じて2つの作業草案を公開した。</li>
-<li>UAAG 2.0 は、ブラウザー、メディア プレーヤー、W3C ワーキング グループ、およびアクセシビリティ専門家を代表する37の組織または個人から提起された246の課題を伴う<a href="http://www.w3.org/WAI/UA/2015/UAAGwideReview.html">幅広いレビュー</a>を受けている 。</li>
+<li>UAAG 2.0 は、ブラウザー、メディア プレーヤー、W3C ワーキング グループ、およびアクセシビリティ専門家を代表する37の組織または個人から提起された246の課題を伴う<a href="http://www.w3.org/WAI/UA/2015/UAAGwideReview.html">幅広いレビュー</a>を受けている。</li>
 <li>全てのコメントと問題は解決されており、UAAG 2.0 には突出した異論はない。</li>
 <li>実装が特定されていない危険にさらされている3つの機能がある。
 <ul>
@@ -336,7 +338,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <li><a href="#gl-text-config">ガイドライン 1.4：テキスト設定</a></li>
 <li><a href="#gl-volume-config">ガイドライン 1.5：ボリューム設定</a></li>
 <li><a href="#gl-speech-config">ガイドライン 1.6：合成音声設定</a></li>
-<li><a href="#gl-style-sheets-config">ガイドライン 1.7：ユーザー スタイル シート設定</a></li>
+<li><a href="#gl-style-sheets-config">ガイドライン 1.7：ユーザー スタイルシート設定</a></li>
 <li><a href="#gl-viewport-orient">ガイドライン 1.8：ビューポートの方向</a></li>
 <li><a href="#gl-alternative-views">ガイドライン 1.9：代替ビュー</a></li>
 <li><a href="#gl-info-link">ガイドライン 1.10：要素情報</a></li>
@@ -377,10 +379,10 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 </ul>
 </li>
 <li><a href="#conformance">適合</a></li>
-<li>Appendix A: <a href="#glossary">用語集</a></li>
-<li>Appendix B: <a href="#ref-this-doc">他のドキュメントからUAAG 2.0を参照する方法</a></li>
-<li>Appendix C: <a href="#references">参考文献</a></li>
-<li>Appendix D: <a href="#acknowledgments">謝辞</a></li>
+<li>付録 A：<a href="#glossary">用語集</a></li>
+<li>付録 B：<a href="#ref-this-doc">他のドキュメントから UAAG 2.0 を参照する方法</a></li>
+<li>付録 C：<a href="#references">参考文献</a></li>
+<li>付録 D：<a href="#acknowledgments">謝辞</a></li>
 </ul>
 </div><!--toc-->
 
@@ -487,7 +489,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 
 <div class="principle" id="p-1">
 <h2 class="principle"><a name="principle-perceivable"
-id="principle-perceivable"></a>原則 1 - ユーザー インターフェースとレンダリングされたコンテンツが認識可能であることを保証する</h2>
+id="principle-perceivable"></a>原則 1：ユーザー インターフェースとレンダリングされたコンテンツが認識可能であることを保証する</h2>
 <div class="guideline-box" id="g-1-1">
 <h3 class="guideline"><a name="gl-access-alternative-content" id="gl-access-alternative-content"></a>ガイドライン 1.1 - 代替コンテンツへのアクセスを提供する <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-access-alternative-content">1.1 の参考文献</a>]</span></h3>
 <p class="summary" id="summary11"><strong>要約</strong>：ユーザーは、代替コンテンツが存在することを示す（1.1.2）インジケーター又は非テキストコンテンツを置き換える（1.1.3）プレースホルダで使用可能な任意のタイプの代替コンテンツ（1.1.1）をレンダリングすることを選択できる。ユーザーが、デフォルトで表示される（1.1.5）、例えば alt テキストなど、1つ以上の代替を選択できることを推奨される。キャプション テキストや手話の代替は、ビデオ及びコントロールを隠すことができず（1.1.4）、ユーザーはテキスト（1.1.6）、メディア代替のサイズと位置（1.1.7）を設定できることが推奨される。</p>
@@ -502,21 +504,21 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_111">1.1.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_111">1.1.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_112" name="sc_112"></a>1.1.2 レンダリングされていない代替コンテンツの提示：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition: recognize">認識された</a>レンダリングされていない<a class="dfn-instance" href="#def-conditional-content" title="definition: Conditional content">代替コンテンツ</a>が存在するとき、レンダリングされたコンテンツと一緒に表示するようにインジケーターを指定できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_112">1.1.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_112">1.1.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_113" name="sc_113"></a>1.1.3 非テキスト コンテンツの置換：</h4>
 <p class="sc-text">ユーザーは、明示的に非テキストコンテンツのレンダリングを要求する時まで、<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition: recognize">認識された</a>非テキスト コンテンツではなく、認識されたテキストの代替コンテンツを組み込むプレースホルダを要求できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_113">1.1.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_113">1.1.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_114" name="sc_114"></a>1.1.4 時間ベースのメディアの代替コンテンツの明確な表示を容易にする：</h4>
@@ -531,7 +533,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_114">1.1.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_114">1.1.4 の参考文献</a></div>
 </div>
 
 </div><!--end level-->
@@ -542,14 +544,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、時間ベースのメディアを包含する、非テキスト コンテンツの各タイプについて、デフォルトでレンダリングする<a class="dfn-instance" href="#def-conditional-content" title="definition: Conditional content">代替コンテンツ</a>のタイプを指定できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_115">1.1.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_115">1.1.5 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title">
 <a id="sc_116" name="sc_116"></a>1.1.6 時間ベースのメディア キャプションに設定可能なテキストを使用する：</h4>
 <p class="sc-text">時間ベースのメディア（例えば、キャプション、手話ビデオなど）のための<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a>画面上の代替コンテンツの場合、<span class="sc-bullet">ユーザーは、<a href="#sc_141">1.4.1</a> に適合して、時間ベースのメディアの代替（例えば、キャプション）内で認識されたテキストを設定できる。</span><span class="level">（レベル&nbsp;AA）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_116">1.1.6 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_116">1.1.6 の参考文献</a></div>
 </div>
 
 </div><!--end level-->
@@ -572,7 +574,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_117">1.1.7 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_117">1.1.7 の参考文献</a></div>
 </div>
 
 </div>
@@ -587,7 +589,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <h4 class="sc-title"><a id="sc_121" name="sc_121"></a>1.2.1 支援技術による修復のサポート：</h4>
 <p class="sc-text">非テキスト コンテンツの代替テキストが欠落または空である場合、ユーザー エージェントは、支援技術（例えば画像ファイル名）で使用可能なテキスト値を代替テキストで修復を試みない。<span class="level">（レベル&nbsp;AA）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_121">1.2.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_121">1.2.1 の参考文献</a></div>
 </div>
 </div><!--end level-->
 
@@ -596,7 +598,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 
 <div class="guideline-box" id="g-1-3">
 
-<h3 class="guideline"><a name="gl-interaction-highlight" id="gl-interaction-highlight"></a>ガイドライン 1.3 - 選択、キーボード フォーカス、有効な要素、訪問済みリンクのハイライト表示 <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-interaction-highlight">1.3 の参考文献</a>] </span></h3>
+<h3 class="guideline"><a name="gl-interaction-highlight" id="gl-interaction-highlight"></a>ガイドライン 1.3 - 選択、キーボード フォーカス、有効な要素、訪問済みリンクのハイライト表示の提供 <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-interaction-highlight">1.3 の参考文献</a>] </span></h3>
 <p class="summary" id="summary13"><strong>要約</strong>：ユーザーは、選択したアイテム、フォーカスしたアイテム及び有効化されたアイテム、少なくとも前景と背景色、境界の色と太さを包含するハイライト オプションの選択を伴う（1.3.2）、直近に訪問したリンクを視覚的に区別できる（1.3.1）。</p>
 
 <div class="sc-level"><!--A-->
@@ -611,7 +613,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li class="sc-bullet"><strong class="handle"></strong>アクセス済みリンク</li>
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_131">1.3.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_131">1.3.1 の参考文献</a></div>
 </div>
 </div><!--sc-level-->
 
@@ -625,7 +627,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_132">1.3.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_132">1.3.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_133" name="sc_133"></a>1.3.3 アクティブなキーボード フォーカスの強調表示：</h4>
@@ -639,7 +641,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_133">1.3.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_133">1.3.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_134" name="sc_134"></a>1.3.4 有効な要素の区別：</h4>
@@ -651,7 +653,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_134">1.3.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_134">1.3.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_135" name="sc_135"></a>1.3.5 有効な要素の区別：</h4>
@@ -662,7 +664,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_135">1.3.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_135">1.3.5 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -671,7 +673,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <div class="guideline-box" id="g-1-4">
 <h3 class="guideline"><a name="gl-text-config" id="gl-text-config"></a>ガイドライン 1.4 - テキスト設定を提供する <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-text-config">1.4 の参考文献</a>] </span></h3>
 <p class="summary" id="summary14"><strong>要約：</strong>ユーザーは、テキストの縮尺、色、スタイル、行間及びフォント ファミリーをグローバルに設定できる（1.4.1、レベル A）。ユーザー エージェントは、ユーザーが選択したプラットフォームのテキスト設定（1.4.5、レベル AA）、ユーザーがテキスト サイズ、色、行間、テキスト スタイル及び要素タイプのフォント ファミリーの設定（1.4.2、レベル AA）、文字間隔、行端揃えと余白のサイズをグローバルに設定（1.4.3、レベル AA）、大文字、ハイフネーションに加えてボーダーをグローバルに設定（1.4.6、レベル AAA）、設定されたテキストとリフロー テキストの印刷（1.4.4、レベル AA）を実装することを推奨される。</p>
-<p><em class="note-handle">注1 </em>：ガイドライン 1.4 の達成基準は、ユーザー スタイル シートを介して達成できる。ユーザー スタイル シートを持たないプラットフォームは、ユーザー エージェントのメイン ユーザー インターフェース又はアドオンを介してテキスト設定をユーザーに提供する必要がある。</p>
+<p><em class="note-handle">注1 </em>：ガイドライン 1.4 の達成基準は、ユーザー スタイルシートを介して達成できる。ユーザー スタイルシートを持たないプラットフォームは、ユーザー エージェントのメイン ユーザー インターフェース又はアドオンを介してテキスト設定をユーザーに提供する必要がある。</p>
 <p><em  class="note-handle">注2：</em>ユーザーは、テキスト サイズとテキスト間隔に対して様々なニーズを持つ。従って、ユーザー エージェントは、ユーザーが現在のタスクのビューを調整できるように、より広い範囲の値及びより多くの増分を提供することを推奨される。</p>
 <div class="sc-level"><!--A-->
 
@@ -685,7 +687,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li class="sc-bullet">下線、イタリック、太字のオン/オフで選択するテキスト スタイル</li>
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_141">1.4.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_141">1.4.1 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -704,7 +706,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_142">1.4.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_142">1.4.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_143" name="sc_143"></a>1.4.3 テキスト ブロック（グローバル）：</h4>
@@ -716,7 +718,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li>罫線</li>
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_143">1.4.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_143">1.4.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_144" name="sc_144"></a>1.4.4 構成されたテキスト及びリフロー テキストの印刷：</h4>
@@ -728,14 +730,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li>ユーザーは、<a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">トップレベルのビューポート</a>が印刷デバイスの印刷可能領域の水平寸法に一致するようにサイズ変更されたかのように、リフロー コンテンツを印刷できる</li>
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_144">1.4.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_144">1.4.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 デフォルトのプラットフォームのテキスト設定：</h4>
 <p class="sc-text">ユーザーは、テキスト設定のデフォルト値としてプラットフォームのテキスト設定を使用するように指定できる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_145">1.4.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_145">1.4.5 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -749,7 +751,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 <p class="sc-notes"><em class="note-handle">注：</em>この達成基準は、全ての大文字で入力されたテキストには適用されない。コンテンツの制作者は、全て大文字で入力する代わりにスタイルを使用することを推奨する。</p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_146">1.4.6 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_146">1.4.6 の参考文献</a></div>
 </div>
 
 </div>
@@ -764,7 +766,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <h4 class="sc-title"><a id="sc_151" name="sc_151"></a>1.5.1 全体のボリューム：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-operating-environment" title="definition: Operating environment">動作環境</a>メカニズムを介して設定された全体の音量レベルに対して、他のトラックとは独立して各<a class="dfn-instance" href="#def-audio-track" title="definition: Audio track">オーディオ トラック</a>の音量を調整できる。<span class="level">（レベル&nbsp;A）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_151">1.5.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_151">1.5.1 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -788,7 +790,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_162">1.6.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_162">1.6.1 の参考文献</a></div>
 </div>
 
 </div>
@@ -806,7 +808,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_162">1.6.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_162">1.6.2 の参考文献</a></div>
 </div>
 </div>
 <div class="sc-level"><!--AAA-->
@@ -821,13 +823,13 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_163">1.6.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_163">1.6.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_164" name="sc_164"></a>1.6.4 合成音声言語： </h4>
 <p class="sc-text">合成音声が生成され、複数の言語が利用可能であるとき、ユーザーは言語を変更できる。<span class="level">（レベル&nbsp;AA）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_164">1.6.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_164">1.6.4 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -837,54 +839,54 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">合成音声が生成された場合、ユーザーは、音声合成装置によって提供された音声特性の全てを調整できる。<span class="level">（レベル&nbsp;AAA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_165">1.6.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_165">1.6.5 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
 <!--gl--></div>
 
 <div class="guideline-box" id="g-1-7">
-<h3 class="guideline"><a name="gl-style-sheets-config" id="gl-style-sheets-config"></a>ガイドライン 1.7 - ユーザー スタイル シートの設定を有効にする <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-style-sheets-config">1.7 の参考文献</a>] </span></h3>
-<p class="summary" id="summary17"><strong>要約</strong>：ユーザー エージェントは、制作者スタイル シートを無効にすることができ（1.7.1、レベル A）、ユーザー スタイル シート又はスタイル メカニズムをサポートし（1.7.2、レベル A）、ユーザーはユーザーが提供するスタイル シートを使用する（1.7.3、レベル A）場合、ユーザーはスタイル シートを保存できることを選択できる（1.7.4、レベル AA）。</p>
+<h3 class="guideline"><a name="gl-style-sheets-config" id="gl-style-sheets-config"></a>ガイドライン 1.7 - ユーザー スタイルシートの設定を有効にする <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-style-sheets-config">1.7 の参考文献</a>] </span></h3>
+<p class="summary" id="summary17"><strong>要約</strong>：ユーザー エージェントは、制作者スタイルシートを無効にすることができ（1.7.1、レベル A）、ユーザー スタイルシート又はスタイル メカニズムをサポートし（1.7.2、レベル A）、ユーザーはユーザーが提供するスタイルシートを使用する（1.7.3、レベル A）場合、ユーザーはスタイルシートを保存できることを選択できる（1.7.4、レベル AA）。</p>
 
 <div class="sc-level"><!--A-->
 
-<h4 class="sc-title"><a id="sc_171" name="sc_171"></a>1.7.1 制作者スタイル シートを無効にする： </h4>
+<h4 class="sc-title"><a id="sc_171" name="sc_171"></a>1.7.1 制作者スタイルシートを無効にする： </h4>
 <p class="sc-text">ユーザー エージェントが制作者スタイルの仕組みをサポートしている場合、ユーザーは現在のページで<a class="dfn-instance" href="#def-author-styles" title="definition: author styles">制作者スタイル</a>の使用を無効にできる。<span class="level">（レベル&nbsp;A）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_171">1.7.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_171">1.7.1 の参考文献</a></div>
 </div>
 
-<h4 class="sc-title"><a id="sc_172" name="sc_172"></a>1.7.2 ユーザー スタイル シートまたはユーザー スタイル変更メカニズムのサポート：</h4>
+<h4 class="sc-title"><a id="sc_172" name="sc_172"></a>1.7.2 ユーザー スタイルシートまたはユーザー スタイル変更メカニズムのサポート：</h4>
 <p class="sc-text">ユーザー エージェントが<a class="dfn-instance" href="#def-author-styles" title="definition: author styles">制作者スタイル</a>のための仕組みをサポートしている場合、ユーザー エージェントは、制作者のスタイリングを上書きするユーザーのスタイリングの仕組みも提供する。<span class="level">（レベル&nbsp;A）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_172">1.7.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_172">1.7.2 の参考文献</a></div>
 </div>
 
-<h4 class="sc-title"><a id="sc_173" name="sc_173"></a>1.7.3 ユーザー スタイル シートの適用：</h4>
+<h4 class="sc-title"><a id="sc_173" name="sc_173"></a>1.7.3 ユーザー スタイルシートの適用：</h4>
 <p class="sc-text"><a  class="dfn-instance"  href="#def-user-styles" title="definition: User Styles">ユーザー スタイル</a>がサポートされている場合、ユーザーは次のユーザー スタイルを有効または無効にできる。<span class="level">（レベル&nbsp;A）</span></p>
 <ul class="sc-bullets">
 <li class="sc-bullet">特定のウェブ サイトの全てのページ。または、</li>
 <li  class="sc-bullet">全てのページ</li>
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_173">1.7.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_173">1.7.3 の参考文献</a></div>
 </div>
 
-<h4 class="sc-title"><a id="sc_174" name="sc_174"></a>1.7.4 スタイル シートのコピーを保存する：</h4>
+<h4 class="sc-title"><a id="sc_174" name="sc_174"></a>1.7.4 スタイルシートのコピーを保存する：</h4>
 <p class="sc-text">
-ユーザーは、現在のページで参照されるスタイル シートのコピーを保存できる。これにより、ユーザーは、ユーザー <a href="#def-stylesheet" title="definition: Stylesheet" class="dfn-instance">スタイル シート</a>としてコピーの編集および読み込むができる。
+ユーザーは、現在のページで参照されるスタイルシートのコピーを保存できる。これにより、ユーザーは、ユーザー <a href="#def-stylesheet" title="definition: Stylesheet" class="dfn-instance">スタイルシート</a>としてコピーの編集および読み込むができる。
 <span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_174">1.7.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_174">1.7.4 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
 <!--gl--></div>
 
 <div class="guideline-box" id="g-1-8">
-<h3 class="guideline"><a name="gl-viewport-orient" id="gl-viewport-orient"></a>ガイドライン 1.8 - ウィンドウとビューポート内での方向付けとコントロール <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-viewport-orient">1.8 の参考文献</a>] </span></h3>
+<h3 class="guideline"><a name="gl-viewport-orient" id="gl-viewport-orient"></a>ガイドライン 1.8 - ウィンドウとビューポート内での方向付けとコントロールを助ける <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-viewport-orient">1.8 の参考文献</a>] </span></h3>
 <p class="summary" id="summary18"><strong>要約</strong>：ユーザー エージェントは、ユーザーの指向を保つためのプログラム的及び視覚的手がかりを提供する。これには、ビューポートの強調表示（1.8.1、レベル A）、ハイライト属性のカスタマイズ（1.8.7、レベル AA）、ビューポート内のフォーカスの保持（1.8.2 及び 1.8.6、レベル A）、ビューポートのサイズ変更1.8.8、レベル A）、コンテンツが可視領域外にあるとき（1.8.3、レベル A）、可視部分（1.8.4、レベル A）、ズーム付き（1.8.5、レベル A 及び 1.8.7、レベル A）でグラフィックコンテンツのサイズを変更するときにスクロールバーを提供およびユーザーが以前に閲覧したページに戻ったときのフォーカスとポイントの復元（1.8.9、レベル AA）を包含する。ユーザーは、全てのビューポートに同じユーザー インターフェース要素を持つか（1.8.12、レベル AA）、新しいビューポートを開くか（1.8.10, レベル AA）どうか、及び新しいビューポートが自動的にフォーカスを取得するか（1.8.11、レベル AA）どうかを指定できる。ユーザーは、複数列テキスト ブロックを単一列にリフローさせることを指定でき（1.8.13、レベル AA）、ユーザーは絶対レイアウト寸法を上書きし（1.8.14、レベル AA）、コンテンツを線型化できる（1.8.15、レベル AA）。ユーザーはウェブ ページ内の項目にマークを付け、ショートカットを使用してマークされた項目に戻ることができる（1.8.16、レベル AAA）。</p>
 
 <div class="sc-level"><!--A-->
@@ -894,21 +896,21 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_181">1.8.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_181">1.8.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_182" name="sc_182"></a>1.8.2 ビューポートの選択とフォーカスに移動：</h4>
 <p class="sc-text">ビューポートの<a class="dfn-instance" href="#def-selection" title="definition: Selection">選択</a>又は<a class="dfn-instance" href="#def-input-focus" title="definition: input focus">入力フォーカス</a>が変更されるとき、必要に応じて<a class="dfn-instance" href="#def-viewport" title="definition: viewport">ビューポート</a>のコンテンツは、新しい選択や入力フォーカスの位置がビューポートの可視部分に少なくとも部分的に位置するよう保証するために移動する。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_182">1.8.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_182">1.8.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_183" name="sc_183"></a>1.8.3 ビューポート スクロールバーを提供する：</h4>
 <p class="sc-text"><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>が<a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">ビューポート</a>のサイズを超えて拡大されるとき、ユーザーは、制作者が指定した値を<a class="dfn-instance" href="#def-override" title="definition: Override">上書き</a>し、スクロールバーを包含するグラフィカルなビューポートを作成できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_183">1.8.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_183">1.8.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_184" name="sc_184"></a>1.8.4 ビューポートの位置を示す：</h4>
@@ -916,7 +918,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_184">1.8.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_184">1.8.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_185" name="sc_185"></a>1.8.5 ズーム許可：</h4>
@@ -927,7 +929,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_185">1.8.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_185">1.8.5 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_186" name="sc_186"></a>1.8.6 注視点の維持：</h4>
@@ -937,7 +939,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_186">1.8.6 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_186">1.8.6 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -947,14 +949,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text"><a href="#sc_181">1.8.1 ハイライト ビューポート</a>で指定されているように、<a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">ビューポート</a>をハイライト表示したとき、ユーザーはビューポート ハイライト機構の属性（例えば、色の濃さや罫線の幅）をカスタマイズできる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_187">1.8.7 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_187">1.8.7 の参考文献</a></div>
 </div>
 
-<h4 class="sc-title"><a id="sc_188" name="sc_188"></a>ビューポートのサイズ変更を許可する：</h4>
+<h4 class="sc-title"><a id="sc_188" name="sc_188"></a>1.8.8 ビューポートのサイズ変更を許可する：</h4>
 <p class="sc-text">ユーザーは、プラットフォームによって課せられた制限内で<a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">ビューポート</a>のサイズを変更し、<a class="def-instance" title="definition: author" href="#def-author">制作者</a>が指定した値を<a class="dfn-instance" href="#def-override" title="definition: Override">上書き</a>できる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_188">1.8.8 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_188">1.8.8 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_189" name="sc_189"></a>1.8.9 ビューポート履歴を提供する：</h4>
@@ -968,7 +970,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li><em class="note-handle">注</em>：選択も復元することを推奨する。</li>
 </ul>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_189">1.8.9 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_189">1.8.9 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1810" name="sc_1810"></a>1.8.10 要求時にトップレベルのビューポートを開く：</h4>
@@ -976,7 +978,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1810">1.8.10 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1810">1.8.10 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1811" name="sc_1811"></a>1.8.11 トップレベルのビューポートのフォーカス制御を許可する：</h4>
@@ -984,14 +986,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1811">1.8.11 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1811">1.8.11 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1812" name="sc_1812"></a>1.8.12 同じユーザー インターフェースを許可する：</h4>
 <p class="sc-text">ユーザーは、全ての<a href="#def-viewport-toplevel" class="dfn-instance" title="definition: viewport">トップレベルのビューポート</a>（例えば、ウィンドウ又はタブなど）が、定義されたユーザー インターフェース設定に従うことを指定できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1812">1.8.12 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1812">1.8.12 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1813" name="sc_1813"></a>1.8.13 複数行のテキストリフロー：</h4>
@@ -1001,14 +1003,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1813">1.8.13 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1813">1.8.13 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 固定ユニットの寸法を無視する：</h4>
 <p class="sc-text">ユーザーは、制作者指定単位のディメンションを上書きできる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1814">1.8.14 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1814">1.8.14 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1815" name="sc_1815"></a>1.8.15 コンテンツの線形化：</h4>
@@ -1016,7 +1018,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p><em class="note-handle">注：</em>一部のレイアウトは、制作者指定のレイアウトが上書きされると使用できなくなる場合がある。この場合、ユーザーは線型化をオフにして別の方法を試すことができる。ユーザー エージェントは、ユーザーがこの振る舞いを有効又は無効にする有益な方法を提供することを推奨する。</p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1815">1.8.15 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1815">1.8.15 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -1027,7 +1029,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーはウェブ ページ内の項目をマークし、ショートカットを使用してマークされた項目に戻ることができる。ユーザーは、セッション後にナビゲーション マークが消えるか、セッション間で永続するかを指定できる。<span class="level">（レベル&nbsp;AAA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1816">1.8.16 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1816">1.8.16 の参考文献</a></div>
 </div>
 
 </div>
@@ -1047,14 +1049,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_191">1.9.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_191">1.9.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_192" name="sc_192"></a>1.9.2 ソースビュー：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-user-agent" rel="glossary" title="definition: User agent">ユーザー エージェント</a>が使用できる全ての<a class="dfn-instance" href="#def-text-source" title="definition: text source">ソース テキスト</a>を表示できる。<span class="level">（レベル&nbsp;AAA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_192">1.9.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_192">1.9.2 の参考文献</a></div>
 </div>
 
 </div>
@@ -1074,14 +1076,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li>テーブル セルの行及び列のラベル</li>
 </ol>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1101">1.10.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1101">1.10.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_1102" name="sc_1102"></a>1.10.2 要素の階層を表示する：</h4>
 <p class="sc-text">ユーザーは、要素階層のルート要素から現在フォーカスされている要素又は選択された要素に向かう要素ノードのパスを決定できる。<span class="level">（レベル&nbsp;AAA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_1102">1.10.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_1102">1.10.2 の参考文献</a></div>
 </div>
 
 </div>
@@ -1089,7 +1091,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </div><!--- END Principle 1 -->
 
 <div class="principle" id="p-2">
-<h2 class="principle"><a name="principle-operable" id="principle-operable"></a>原則 2 ユーザー インターフェースが操作可能であることを保証する</h2>
+<h2 class="principle"><a name="principle-operable" id="principle-operable"></a>原則 2：ユーザー インターフェースが操作可能であることを保証する</h2>
 <a name="intro-modality-independence" id="intro-modality-independence"></a>
 <ul class="sc-notes">
 <li class="sc-notes"><em class="note-handle">注</em>：<strong class="handle">モダリティの独立性</strong>：ウェブ ブラウザーとインタラクションするユーザーは、キーボード、マウス、スピーチ、タッチ、ジェスチャーを包含する1つ以上の入力方法を使用できる。特定の状況に最も適した入力方法又は方法の組み合わせを、各ユーザーが自由に使用することが重要である。全ての潜在的なユーザー タスクがアクセシブルである場合（つまり複数のモダリティがサポートされている）、ユーザーは最も適したものを選択できる。例えば、ユーザーがマウスを使用できないかマウスにアクセスできないが、キーボードを使用またはアクセスできる場合、キーボードは OnMouseOver イベントをアクティブにするために、モダリティに依存しないコントロールを呼び出すことができる。別の例としては、キーボードのないモバイル デバイスのユーザーは、個別またはキーボード入力をシミュレートするために、タップ、ワイヤレス接続デバイス及び音声コマンドを使用できる。モダリティに依存しないコントロールの API 及び技術の詳細については、<a href="http://www.w3.org/TR/indie-ui-events/">独立したユーザー インターフェース：イベント</a>を見よ。</li>
@@ -1104,42 +1106,42 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_211">2.1.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_211">2.1.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_212" name="sc_212"></a>2.1.2 キーボード フォーカスあり：</h4>
 <p class="sc-text">全ての<a class="dfn-instance" href="#def-viewport" title="definition: viewport">ビューポート</a>は、常にアクティブ又は非アクティブの<a class="dfn-instance" href="#def-keyboard-focus" title="definition: keyboard focus">キーボード フォーカス</a>がある。<span class="level">（レベル&nbsp;A）</span>  </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_212">2.1.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_212">2.1.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_213" name="sc_213"></a>2.1.3 キーボード トラップを避ける：</h4>
 <p class="sc-text">（ネストされたユーザー エージェントを包含する）キーボード インターフェイスを使用して<a class="dfn-instance" href="#def-keyboard-focus" title="definition: keyboard focus">キーボード フォーカス</a>をコンポーネントに移動できる場合、キーボード インターフェイスだけを使用してコンポーネントからフォーカスを移動できる。変更されていない矢印キーや Tab キー（又はエスケープのような標準の終了方法）が必要な場合は、ユーザーに、フォーカスを移動する方法を通知する。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_213">2.1.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_213">2.1.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_214" name="sc_214"></a>2.1.4 選択とアクティベーションの分離：</h4>
 <p class="sc-text">ユーザーは、フォーカス、選択又は制御の状態をさらに変化させるユーザー エージェント又は制作者のコンテンツなしに、フォーカス及び選択を移動できるように指定できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_214">2.1.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_214">2.1.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_215" name="sc_215"></a>2.1.5 テキストに従うキーボードの表記法：</h4>
 <p class="sc-text">ユーザー エージェントは、<a class="dfn-instance" href="#def-operating-environment" title="definition: operating environment">オペレーティング環境</a>用のキーボード規則に従う。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_215">2.1.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_215">2.1.5 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_216" name="sc_216"></a>2.1.6 キーボードアクセスを効率的にする：</h4>
 <p class="sc-text"><a class="dfn-instance" href="#def-user-agent" rel="glossary" title="definition: User agent">ユーザー エージェント</a>のユーザー インターフェースは、シーケンシャル キーボード アクセスよりも効率的なキーボード アクセスのメカニズムを包含する。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_216">2.1.6 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_216">2.1.6 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -1151,10 +1153,10 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="summary" id="summary22"><strong>要約</strong>：ユーザーは、ビューポート内（2.2.1、レベル A）及びビューポート間（2.2.2、レベル A）の全ての操作可能な要素をシーケンシャルにナビゲートするためにキーボードを使用でき、そしてデフォルトのナビゲーション順序はドキュメントの順序（2.2.3、レベル A）である。ユーザーは、ラッピングが発生するとき、ラッピングを無効にしたり、信号を要求できる（2.2.4、レベル AA）。</p>
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_221" name="sc_221"></a>2.2.1 要素間の順次ナビゲーション：</h4>
-<p class="sc-text">ユーザーは、現在の<a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">トップレベルのビューポート</a> の<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>内の<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a>全ての有効な要素を介して、 <a class="dfn-instance" href="#def-keyboard" rel="glossary" title="definition: keyboard">キーボード</a> フォーカスを前後に移動できる 。<span class="level">（レベル&nbsp;A）</span></p>
+<p class="sc-text">ユーザーは、現在の<a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">トップレベルのビューポート</a>の<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>内の<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a>全ての有効な要素を介して、<a class="dfn-instance" href="#def-keyboard" rel="glossary" title="definition: keyboard">キーボード</a> フォーカスを前後に移動できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_221">2.2.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_221">2.2.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_222" name="sc_222"></a>2.2.2 ランドマーク間のシーケンシャルなナビゲーション：</h4>
@@ -1164,14 +1166,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_222">2.2.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_222">2.2.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_223" name="sc_223"></a>2.2.3 デフォルトのナビゲーション順序：</h4>
 <p class="sc-text">制作者がナビゲーション順序を指定していない場合、ユーザーはソース順序であるデフォルトのシーケンシャル ナビゲーション順序を持つことができる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_223">2.2.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_223">2.2.3 の参考文献</a></div>
 </div>
 
 </div>
@@ -1180,7 +1182,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、ドキュメントの最初又は最後で<a class="dfn-instance" href="#def-sequential-navigation" title="definition: sequential navigation">シーケンシャル ナビゲーション</a>がラップされたときに通知を要求することができ、そのような折り返しを防止できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_224">2.2.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_224">2.2.4 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -1195,35 +1197,35 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>内の<a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">有効な要素</a>に<a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">直接</a>キーボード フォーカスを移動できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_231">2.3.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_231">2.3.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_232" name="sc_232"></a>2.3.2 有効な要素の直接アクティブ化を許可する：</h4>
 <p class="sc-text">ユーザーは、単一のアクションで、<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>内の<a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">有効な要素</a>に<a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">直接</a>キーボード フォーカスを移動し、その要素に対してアクティブ化アクションを実行できる。<span class="level">（レベル&nbsp;AA）</span>  </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_232">2.3.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_232">2.3.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_233" name="sc_233"></a>2.3.3 レンダリングされたコンテンツからダイレクト コマンドを提示する：</h4>
 <p class="sc-text">ユーザーは、（例えば、アクセスキー、ランドマークなど）<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>内に任意の<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a><a class="dfn-instance" href="#def-direct-command" rel="glossary" title="definition: direct command">ダイレクト コマンド</a>を持たせ、その関連する要素（例えば、メールに返信するための Alt + R）を提示できる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_233">2.3.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_233">2.3.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_234" name="sc_234"></a>2.3.4 ユーザー インターフェースにダイレクト コマンドを提示する：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>にある（例えば、キーボード ショートカットなど）任意のダイレクト コマンドを持たせ、その関連するユーザー インターフェース制御（例えば、「保存」メニュー項目及びツールバー ボタンに表示される「Ctrl + S」など）を提示できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_234">2.3.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_234">2.3.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_235" name="sc_235"></a>2.3.5 カスタマイズされたキーボード コマンドを許可する：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-operating-environment" rel="glossary" title="definition: operating environment">オペレーティング環境</a>の（例えば、メニュー内をナビゲートするための矢印キーなど）従来のバインディングを除いて、認識された制作者提供の（例えば、アクセスキーなど）ショートカット及び <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a> コントロールを包含する<a class="dfn-instance" href="#def-keyboard-shortcut" rel="glossary" title="definition: keyboard shortcut">キーボード ショートカット</a>をリマップできる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_235">2.3.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_235">2.3.5 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -1235,40 +1237,38 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_241" name="sc_241"></a>2.4.1 テキスト検索：</h4>
-<p class="sc-text">
-ユーザーは、<a class="dfn-instance" href="#def-doc-char-set" title="definition: Document character set">ドキュメントの文字セット</a>からの印刷文字の任意のシーケンスに対して、レンダリングされたテキストの代替およびレンダリングされた生成コンテンツを包含する<a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">レンダリングされたコンテンツ</a>内の検索を実行できる。
-<span class="level">（レベル&nbsp;A）</span></p>
+<p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-doc-char-set" title="definition: Document character set">ドキュメントの文字セット</a>からの印刷文字の任意のシーケンスに対して、レンダリングされたテキストの代替及びレンダリングされた生成コンテンツを包含する<a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">レンダリングされたコンテンツ</a>内の検索を実行できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_241">2.4.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_241">2.4.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_242" name="sc_242"></a>2.4.2 検索の方向：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content">レンダリングされたコンテンツ</a>の前方または後方に検索できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_242">2.4.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_242">2.4.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_243" name="sc_243"></a>2.4.3 一致の発見：</h4>
 <p class="sc-text">検索操作で一致が生成されるとき、一致したコンテンツが<a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">強調表示</a>され、必要に応じて一致するコンテンツを可視領域内に表示するため<a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">ビューポート</a>がスクロールされ、ユーザーは一致した場所から検索できる。<span class="level">（レベル&nbsp;A）</span>  </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_243">2.4.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_243">2.4.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_244" name="sc_244"></a>2.4.4 完了又は不一致のアラート：</h4>
 <p class="sc-text">ユーザーは、検索操作に一致するものがないとき、<a class="dfn-instance" href="#def-alert" title="definition: notify">通知</a>を受け取るように選択できる。ユーザーは、コンテンツの最初又は最後から検索を継続するときに通知を受け取るように選択できる。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_244">2.4.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_244">2.4.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_245" name="sc_245"></a>2.4.5 代替コンテンツ検索：</h4>
 <p class="sc-text">ユーザーは、代替コンテンツが画面上にレンダリングされないときでも、（例えば、<a class="dfn-instance" href="#def-conditional-content" title="definition: alternative content">非テキストコンテンツの代替テキスト</a>、キャプションなど）テキストである代替コンテンツ内でテキストの検索を実行できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_245">2.4.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_245">2.4.5 の参考文献</a></div>
 </div>
 
 <!--sc-level--></div>
@@ -1288,7 +1288,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_251">2.5.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_251">2.5.1 の参考文献</a></div>
 </div>
 
 </div>
@@ -1306,35 +1306,35 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_261">2.6.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_261">2.6.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_262" name="sc_262"></a>2.6.2 全てをデフォルトに戻すことを許可する：</h4>
 <p class="sc-text">ユーザーは、全てのプリファレンス設定をデフォルト値に戻すことができる。<span class="level">（レベル&nbsp;A）</span> </p>
  
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_262">2.6.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_262">2.6.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_263" name="sc_263"></a>2.6.3 複数のプリファレンス設定を許可する：</h4>
 <p class="sc-text">ユーザーは、複数のユーザー エージェント設定の保存と取得ができる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_263">2.6.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_263">2.6.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_264" name="sc_264"></a>2.6.4 ユーザー インターフェースの外部からのプリファレンスの変更を許可する：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>の外部からユーザー エージェント アクセシビリティ ガイドライン（UAAG）2.0 を満たすために必要な任意のプリファレンス設定を調整できる。<span class="level">（レベル&nbsp;AAA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_264">2.6.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_264">2.6.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_265" name="sc_265"></a>2.6.5 プリファレンス設定を転送可能にする：</h4>
 <p class="sc-text">ユーザーは、デバイス間で互換性のある全てのユーザー エージェント設定を転送できる。<span class="level">（レベル&nbsp;AAA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_265">2.6.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_265">2.6.5 の参考文献</a></div>
 </div>
 
 </div>
@@ -1357,7 +1357,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_271">2.7.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_271">2.7.1 の参考文献</a></div>
 </div>
 
 </div>
@@ -1380,7 +1380,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li><strong class="sc-bullet">20時間例外：</strong>時間制限が20時間以上ある。</li>
 </ol>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_281">2.8.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_281">2.8.1 の参考文献</a></div>
 </div>
 
 </div>
@@ -1395,7 +1395,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">デフォルトの設定では、ユーザー エージェントは、発光が一般的な発光及び赤色の発光閾値を下回らない限り、1秒間に3回以上発光する UA ユーザー インターフェース コンポーネントを表示しない。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_291">2.9.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_291">2.9.1 の参考文献</a></div>
 </div>
 
 </div>
@@ -1405,7 +1405,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">デフォルトの設定では、ユーザー エージェントは、（発光が一般的な発光閾値および赤色の発光閾値を下回っているかどうかに関係なく）1秒間に3回以上発光する UA ユーザー インターフェース コンポーネントを表示しない。<span class="level">（レベル&nbsp;AAA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_292">2.9.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_292">2.9.2 の参考文献</a></div>
 </div>
 
 </div>
@@ -1415,7 +1415,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <div class="guideline-box" id="g-2-11">
 <h3 class="guideline"><a name="gl-control-inaccessible-content" id="gl-control-inaccessible-content">ガイドライン 2.10 - </a> 時間ベースのメディアの制御を提供する <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-control-inaccessible-content">2.10 の参考文献</a>] </span></h3>
 
-<p class="summary" id="summary211"><strong>要約</strong>ユーザーは、時間ベースのメディア（2.10.1、レベル A）及び実行可能な領域のプレースホルダ（2.10.2、レベル A）を表示、全ての実行可能なコンテンツをブロック（2.10.3、レベル A）、 再生（2.10.4 レベル A）、停止/一旦停止/再開（2.10.5、レベル A）の調整、時間（2.10.6、レベル A）又は章（2.10.7、レベル AA）などの意味構造によってナビゲートできる。ユーザーが、視覚的な時間ベースのメディアのコントラストと明るさを調整することを推奨する（2.10.8、レベル AAA）。トラックを有効又は無効にすることは、<a href="#sc_111">1.1.1 代替コンテンツのレンダリング</a>に包含される。</p>
+<p class="summary" id="summary211"><strong>要約</strong>：ユーザーは、時間ベースのメディア（2.10.1、レベル A）及び実行可能な領域のプレースホルダ（2.10.2、レベル A）を表示、全ての実行可能なコンテンツをブロック（2.10.3、レベル A）、 再生（2.10.4 レベル A）、停止/一旦停止/再開（2.10.5、レベル A）の調整、時間（2.10.6、レベル A）又は章（2.10.7、レベル AA）などの意味構造によってナビゲートできる。ユーザーが、視覚的な時間ベースのメディアのコントラストと明るさを調整することを推奨する（2.10.8、レベル AAA）。トラックを有効又は無効にすることは、<a href="#sc_111">1.1.1 代替コンテンツのレンダリング</a>に包含される。</p>
 
 
 <div class="sc-level">
@@ -1423,21 +1423,21 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-user-request" title="definition: Explicit user request">明示的なユーザー要求</a>までコンテンツが再生されないように、<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a>時間ベースのメディア コンテンツの読み込み時の再生を上書きできる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2101">2.10.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2101">2.10.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_2102" name="sc_2102"></a>2.10.2 実行プレースホルダ：</h4>
 <p class="sc-text">ユーザーは、実行の<a class="dfn-instance" href="#def-user-request" title="definition: Explicit user request">明示的なユーザーの要求</a>があるまで、通常は画面上の領域（アプレット、Flash など）に含まれる実行可能なコンテンツの代わりに<a href="#def-placeholder">プレースホルダ</a>を要求できる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2102">2.10.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2102">2.10.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_2103" name="sc_2103"></a>2.10.3 実行トグル：</h4>
 <p class="sc-text">ユーザーは、動的コンテンツ又は実行可能なコンテンツ（例えば、Javascript、Canvas、Media）の実行をオン/オフすることができる。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2103">2.10.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2103">2.10.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_2104" name="sc_2104"></a>2.10.4 録画済みコンテンツの調整可能な再生速度：</h4>
@@ -1450,20 +1450,20 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2104">2.10.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2104">2.10.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_2105" name="sc_2105"></a>2.10.5 時間ベース メディアの停止/一時停止/再開：</h4>
 <p class="sc-text">ユーザーは、デフォルトの再生速度が3秒以上続くレンダリングされたオーディオ及び<a class="dfn-instance" href="#def-animation" title="definition: Animation">アニメーション</a> コンテンツ（例えば、ビデオ、アニメーション、テキストの変更）を停止、一時停止や再開ができる。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2105">2.10.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2105">2.10.5 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_2106" name="sc_2106"></a>2.10.6 時間ベース メディアの時間別ナビゲーション：</h4>
 <p class="sc-text">時間ベースのメディアがデフォルトの再生レートで3秒以上持続する場合、ユーザーは継続的なスケールの使用と<a class="dfn-instance" href="#def-relative-time-units" rel="glossary" title="definition: relative time units">相対時間単位</a>によってナビゲートできる。<span class="level">（レベル&nbsp;A）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2106">2.10.6 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2106">2.10.6 の参考文献</a></div>
 </div>
 
 </div>
@@ -1474,7 +1474,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、例えばメディアに存在するチャプター又はシーンなどによって、時間ベースのメディア内の意味構造によってナビゲートできる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2107">2.10.7 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2107">2.10.7 の参考文献</a></div>
 </div>
 
 </div>
@@ -1484,7 +1484,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、視覚的な時間ベース メディアのコントラスト及び明るさを調整できる。<span class="level">（レベル&nbsp;AAA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2108">2.10.8 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2108">2.10.8 の参考文献</a></div>
 </div>
 
 </div>
@@ -1498,14 +1498,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">入力デバイスが<a class="dfn-instance" href="#def-platform" rel="glossary" title="definition: platform">プラットフォーム</a>によってサポートされている場合、テキスト入力を包含する全てのユーザー エージェント機能は、そのデバイスを使用して操作できる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_2111">2.11.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_2111">2.11.1 の参考文献</a></div>
 </div>
 
 </div>
 </div>
 </div><!--- END Principle 2 -->
 <div class="principle" id="p-3">
-<h2 class="principle"><a name="principle-understandable" id="principle-understandable"></a>原則 3: ユーザー インターフェースが理解可能であることを保証する</h2>
+<h2 class="principle"><a name="principle-understandable" id="principle-understandable"></a>原則 3：ユーザー インターフェースが理解可能であることを保証する</h2>
 <div class="guideline-box" id="g-3-2">
 <h3 class="guideline"><a name="gl-avoid-mistakes" id="gl-avoid-mistakes">ガイドライン 3.1 - </a> ユーザーが間違いを避けて訂正するのを助ける <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-avoid-mistakes">3.1 の参考文献</a>] </span></h3>
 
@@ -1519,21 +1519,21 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_311">3.1.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_311">3.1.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_312" name="sc_312"></a>3.1.2 設定変更は取り消しまたは確認できる：</h4>
 <p class="sc-text">ユーザー エージェントがユーザー インターフェースの設定を変更するためのメカニズムを提供する場合、ユーザーは設定の変更を取り消しか、それともユーザー エージェントはユーザーの確認を続行することができる。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_312">3.1.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_312">3.1.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_313" name="sc_313"></a>3.1.3 検索の進行状況：</h4>
 <p class="sc-text">デフォルトでは、ユーザー エージェントはコンテンツ取得アクティビティの状態を表示する。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_313">3.1.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_313">3.1.3 の参考文献</a></div>
 </div>
 
 </div>
@@ -1543,21 +1543,21 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、レンダリングされたコンテンツの編集可能なテキストの綴りを支援できる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_314">3.1.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_314">3.1.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_315" name="sc_315"></a>3.1.5 戻るボタン：</h4>
 <p class="sc-text">ユーザーは、ウェブ アドレス間（例えば、標準的な「戻るボタン」機能など）で<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a>ナビゲーションを取り消すことができる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_315">3.1.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_315">3.1.5 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_316" name="sc_316"></a>3.1.6 フォーム提出確認：</h4>
 <p class="sc-text">ユーザーは、<a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">認識された</a>フォームの提出を確認する必要があるかどうかを指定できる。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_316">3.1.6 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_316">3.1.6 の参考文献</a></div>
 </div>
 
 </div>
@@ -1571,14 +1571,14 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li>ユーザーの電話番号</li>
 </ol>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_317">3.1.7 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_317">3.1.7 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_318" name="sc_318"></a>3.1.8 フォームエントリの保存：</h4>
 <p class="sc-text">ユーザー エージェントがウェブ コンテンツのローカル バージョンを保存する機能を提供する場合、ユーザーが入力したフォーム フィールドは保存されたバージョンのエントリを全て保持する。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_318">3.1.8 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_318">3.1.8 の参考文献</a></div>
 </div>
 
 </div>
@@ -1593,7 +1593,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">製品の<a class="dfn-instance" href="#def-documentation" title="definition: documentation">ドキュメント</a>は、WCAG 2.0 レベル「A」以上の達成基準を満たす形式で入手できる。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_321">3.2.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_321">3.2.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_322" name="sc_322"></a>3.2.2 アクセシビリティ機能の記述：</h4>
@@ -1605,7 +1605,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <li class="sc-bullet"><strong class="handle">ユーザーが使用しない</strong>：この機能は、（例えば、プラットフォームのアクセシビリティ サービスに情報を渡すなど）ユーザーが直接使用しない。</li>
 </ol>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_322">3.2.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_322">3.2.2 の参考文献</a></div>
 </div>
 
 </div>
@@ -1616,19 +1616,19 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">各ユーザー エージェント機能について、少なくとも以下のいずれかが該当する。<span class="level">（レベル&nbsp;AA）</span> </p>
 <ol type="a" class="sc-bullets">
 <li class="sc-bullet"><strong class="handle">ドキュメントに記載されている</strong>：この機能の使用方法は、ユーザー エージェントのドキュメントで説明されてる。または、</li>
-<li class="sc-bullet"><strong class="handle">インターフェースで説明されている</strong>：この機能の使用方法は、<a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>で説明している 。または、</li>
+<li class="sc-bullet"><strong class="handle">インターフェースで説明されている</strong>：この機能の使用方法は、<a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>で説明している。または、</li>
 <li class="sc-bullet"><strong class="handle">プラットフォーム サービス</strong>：この機能は、基盤となるプラットフォームによって提供されるサービスである。または、</li>
 <li class="sc-bullet"><strong class="handle">ユーザーによって使用されない</strong>：この機能は、（例えば、プラットフォームのアクセシビリティ サービスに情報を渡すなど）ユーザーが直接使用しない。</li>
 </ol>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_323">3.2.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_323">3.2.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_324" name="sc_324"></a>3.2.4 バージョン間の変更：</h4>
 <p class="sc-text">前回のユーザー エージェントのリリース以降、UAAG 2.0 の達成基準を満たす機能の変更がドキュメント化されている。<span class="level">（レベル&nbsp;AA）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_324">3.2.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_324">3.2.4 の参考文献</a></div>
 </div>
 
 </div>
@@ -1638,7 +1638,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザー エージェント アクセシビリティ ガイドライン 2.0 の要件を満たすために必要な、ユーザー エージェントの全ての機能のビューを示すドキュメントの専用セクションがある。<span class="level">（レベル&nbsp;AAA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_325">3.2.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_325">3.2.5 の参考文献</a></div>
 </div>
 
 </div>
@@ -1652,7 +1652,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 <p class="sc-text">ユーザーは、明示的なユーザー要求の結果ではないフォーカスの変更を防ぐことができる。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_331">3.3.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_331">3.3.1 の参考文献</a></div>
 </div>
 
 </div>
@@ -1661,7 +1661,7 @@ id="principle-perceivable"></a>原則 1 - ユーザー インターフェース�
 
 <div class="principle" id="p-4">
 <h2 class="principle"><a name="principle-AT-access"
-id="principle-AT-access"></a>原則 4: プログラムによるアクセスを容易にする</h2>
+id="principle-AT-access"></a>原則 4：プログラムによるアクセスを容易にする</h2>
 <div class="guideline-box" id="g-4-1">
 <h3 class="guideline"><a name="gl-AT-access" id="gl-AT-access"></a>ガイドライン 4.1 - <span class="principle">支援技術へのプログラム的なアクセスを容易にする </span> <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-AT-access">4.1 の参考文献</a>] </span></h3>
 <p class="summary" id="summary41"><strong>要約</strong>：ユーザー エージェントは、プラットフォームのアクセシビリティ サービス（4.1.1、レベル A）、全てのコントロールと操作に関する情報の包含（4.1.2、レベル A）、プラットフォームへのアクセシビリティ サービスが利用できない場合、DOM へのアクセスをサポートする（4.1.4、レベル A）。コントロールは、プログラムで調整することができる（4.1.5、レベル A）。アクセシブルにできない場合は、例えばカスタマイズされたウィンドウの代わりに標準ウィンドウなど、アクセシブルな代替バージョンを提供する（4.1.3、レベル A）。</p>
@@ -1673,10 +1673,10 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 <p class="sc-text">ユーザー エージェントは、関連する<a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">プラットフォームのアクセシビリティ サービス</a>をサポートする。<span class="level">（レベル&nbsp;A）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_411">4.1.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_411">4.1.1 の参考文献</a></div>
 </div>
 <h4 class="sc-title"><a id="sc_412" name="sc_412"></a>4.1.2 アクセシブルなプロパティを公開する：</h4>
-<p class="sc-text"><a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>、<a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">レンダリングされたコンテンツ</a>及び生成されたコンテンツを包含する）全てのユーザー インターフェース コンポーネントでは、ユーザー エージェントは、<a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">プラットフォームのアクセシビリティ サービス</a>を介して、次のプロパティ及び変更通知を<a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: available">利用可能</a>にする。<span class="level">（レベル&nbsp;A）</span> </p>
+<p class="sc-text">（<a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>、<a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">レンダリングされたコンテンツ</a>及び生成されたコンテンツを包含する）全てのユーザー インターフェース コンポーネントでは、ユーザー エージェントは、<a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">プラットフォームのアクセシビリティ サービス</a>を介して、次のプロパティ及び変更通知を<a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: available">利用可能</a>にする。<span class="level">（レベル&nbsp;A）</span> </p>
 <ul class="sc-bullets">
 <li>名前、役割、状態</li>
 <li>値</li>
@@ -1692,28 +1692,28 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_412">4.1.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_412">4.1.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_413" name="sc_413"></a>4.1.3 同等のアクセシブルな代替を提供する：</h4>
 <p class="sc-text"><a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>機能を、<a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">プラットフォーム アクセシビリティ サービス</a>を介して公開できない場合、ユーザー エージェントはプラットフォーム アクセシビリティ サービスを介して公開される同等の機能を提供する。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_413">4.1.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_413">4.1.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_414" name="sc_414"></a>4.1.4 プログラム的にフォールバックとして利用可能な DOM：</h4>
 <p class="sc-text">ユーザー エージェント アクセシビリティ API が1つ以上のプラットフォームのアクセシビリティ サービスに十分な情報を提供しない場合は、Document Object Model（DOM）を支援技術でプログラム的に使用可能にしなければならない。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_414">4.1.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_414">4.1.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_415" name="sc_415"></a>4.1.5 コンテンツ インタラクションをプログラム的に利用可能にする：</h4>
 <p class="sc-text">ユーザーが、（例えば、ボックスをチェックしたり、テキストエリアを編集するなど）コンテンツにインタラクトできる場合、同じ程度のインタラクションがプログラム的に利用可能である。<span class="level">（レベル&nbsp;A）</span> </p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_415">4.1.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_415">4.1.5 の参考文献</a></div>
 </div>
 </div>
 </div>
@@ -1721,7 +1721,7 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 
 
 <div class="principle" id="p-5">
-<h2 class="principle"><a name="principle-follow-specs" id="principle-follow-specs"></a>原則 5: 適用される仕様と規約を遵守する</h2>
+<h2 class="principle"><a name="principle-follow-specs" id="principle-follow-specs"></a>原則 5：適用される仕様と規約を遵守する</h2>
 <div class="guideline-box" id="g-5-1">
 <h3 class="guideline"><a name="gl-obs-env-conventions" id="gl-obs-env-conventions"></a>ガイドライン 5.1 - 適用される仕様と規約を遵守する <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#gl-obs-env-conventions">5.1 の参考文献</a>] </span></h3>
 <p class="summary" id="summary52"><strong>要約</strong>：ブラウザーのコントロールが HTML 又は同様の標準で作成されているとき、W3C のウェブ コンテンツ アクセシビリティ ガイドラインを満たす必要がある（5.1.1、レベル A、AA、AAA）。ユーザー エージェントは、コンテンツフォーマット（5.1.2、レベル A）とプラットフォーム（5.1.3、レベル A）のアクセシビリティ機能をサポートし、レンダリングされない技術の処理を可能にし（5.1.4、レベル A）、代替ビューアーが利用でき（5.1.4、レベル AA）、ユーザーがアクセシビリティ問題を報告できるようにする（5.1.5、レベル AAA）。</p>
@@ -1729,11 +1729,11 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 <h4 class="sc-title"><a id="sc_511" name="sc_511"></a>5.1.1 WCAG に従う：</h4>
 <p class="sc-text">ウェブベースの <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA ユーザー インターフェース</a>は、WCAG 2.0 の達成基準を満たしている。<span class="level">（WCAG 2.0 レベル A 達成基準を満たすレベル A、WCAG 2.0 レベル A および AA 達成基準を満たすレベル AA、WCAG 2.0 レベル A、AA および AAA 達成基準を満たすレベル AAA）</span></p>
 <ul class="sc-notes">
-<li class="sc-note"><em class="note-handle">注：</em>この達成基準は、ネイティブの UA ユーザー インターフェースに適用されないが、ウェブベースのネイティブ ユーザー エージェント（例えばヘルプ システムなど）の一部に包含される。ただし、ネイティブ ユーザー エージェントのユーザー インターフェースの開発者は、ウェブ以外の情報通信テクノロジー（WCAG2ICT） <a href="#ref-wcag2ict">[WCAG2ICT]</a>への WCAG 2.0 の適用に関するガイダンスに従うことを推奨する。</li>
+<li class="sc-note"><em class="note-handle">注：</em>この達成基準は、ネイティブの UA ユーザー インターフェースに適用されないが、ウェブベースのネイティブ ユーザー エージェント（例えばヘルプ システムなど）の一部に包含される。ただし、ネイティブ ユーザー エージェントのユーザー インターフェースの開発者は、ウェブ以外の情報通信テクノロジー（WCAG2ICT） <a href="#ref-wcag2ict">[WCAG2ICT]</a> への WCAG 2.0 の適用に関するガイダンスに従うことを推奨する。</li>
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_511">5.1.1 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_511">5.1.1 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_512" name="sc_512"></a>5.1.2 ウェブ コンテンツ技術のアクセシビリティ機能の実装仕様：</h4>
@@ -1748,20 +1748,20 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 </ul>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_512">5.1.2 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_512">5.1.2 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_513" name="sc_513"></a>5.1.3 プラットフォームのアクセシビリティ機能の実装：</h4>
 <p class="sc-text">ユーザー エージェントがネイティブのユーザー インターフェースを含む場合、それらのネイティブユーザー インターフェースは、プラットフォームに対するユーザー インターフェース アクセシビリティ ガイドラインに従う。<span class="level">（レベル&nbsp;A）</span></p>
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_513">5.1.3 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_513">5.1.3 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title"><a id="sc_514" name="sc_514"></a>5.1.4 代替コンテンツでのコンテンツ要素のレンダリングを許可する：</h4>
 <p class="sc-text">ユーザーは、コンテンツ要素を選択し、代替ビューアーでレンダリングさせることができる。<span class="level">（レベル&nbsp;AA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_514">5.1.4 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_514">5.1.4 の参考文献</a></div>
 </div>
 
 <h4 class="sc-title">
@@ -1769,7 +1769,7 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 <p class="sc-text">ユーザー エージェントは、ユーザー エージェントのアクセシビリティ問題を報告するためのメカニズムを提供する。<span class="level">（レベル&nbsp;AAA）</span></p>
 
 <div class="gl-only">
-<div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/#sc_515">5.1.5 の参考文献</a></div>
+<div class="implementing-link"><a href="../UAAG20-Reference/#sc_515">5.1.5 の参考文献</a></div>
 </div>
 
 </div>
@@ -1872,7 +1872,7 @@ id="principle-AT-access"></a>原則 4: プログラムによるアクセスを�
 <dd class="glossary">ユーザー エージェントがプログラムで決定できる<a href="#def-content">ウェブ コンテンツ</a>は、一部のユーザーがアクセスできない他のコンテンツの代わりに利用できる。代替コンテンツは、元のコンテンツと本質的に同じ機能又は目的を果たしている。これらは、代替コンテンツの一般的な種類の一部である。
 <ul>
 <li><dfn><a id="def-Text-Alternatives" name="def-Text-Alternatives"></a>非テキスト コンテンツの代替テキスト</dfn>：<a href="#def-non-text-content">非テキストコンテンツ</a>にプログラムで関連付けられているテキスト又は非テキストコンテンツにプログラムで関連付けられたテキストから参照されるテキスト。例えば、チャートの画像には、短い代替テキスト及びチャートの内容をより完全に説明する近くの段落に関連付けることで記述する、2つの代替テキストがある。</li>
-<li><dfn><a id="def-Time-Based-Alternatives" name="def-Time-Based-Alternatives"></a>時間ベースメディアの代替</dfn>：時間ベースのメディア プレゼンテーションで複数のトラックと同じ機能又は目的を果たす<a href="#def-content">ウェブ コンテンツ</a>。これには、<a href="#def-captions">キャプション</a>及び手話の解説などのオーディオのための代替、<a href="#def-audio-description">オーディオ ディスクリプション</a>や<a href="#def-Auditory-Description-Extended">拡張されたオーディオの説明</a>などのビデオの代替を包含する 。時間ベース メディアの代替の他の形式は、時間ベースのプレゼンテーションにおいて任意のインタラクティビティの結果を達成できる、時間ベースの視覚及び聴覚情報の正確に順序付けされたテキストの記述である。</li>
+<li><dfn><a id="def-Time-Based-Alternatives" name="def-Time-Based-Alternatives"></a>時間ベースメディアの代替</dfn>：時間ベースのメディア プレゼンテーションで複数のトラックと同じ機能又は目的を果たす<a href="#def-content">ウェブ コンテンツ</a>。これには、<a href="#def-captions">キャプション</a>及び手話の解説などのオーディオのための代替、<a href="#def-audio-description">オーディオ ディスクリプション</a>や<a href="#def-Auditory-Description-Extended">拡張されたオーディオの説明</a>などのビデオの代替を包含する。時間ベース メディアの代替の他の形式は、時間ベースのプレゼンテーションにおいて任意のインタラクティビティの結果を達成できる、時間ベースの視覚及び聴覚情報の正確に順序付けされたテキストの記述である。</li>
 <li><dfn><a id="def-text-alternatives-for-text" name="def-text-alternatives-for-text"></a>テキスト コンテンツの代替テキスト</dfn>：拡張された情報を提供するために特定のタイプのテキスト コンテンツとプログラムで関連付けられたテキスト。例えば、略語（又は頭字語）は、短縮された単語や初期化された単語の拡張を提供できる（&lt;abbr title=&quot;User Agent Accessibility  Guidelines&quot;&gt;UAAG&lt;/abbr&gt;）。</li>
 <li><dfn><a id="def-Media-Alternatives" name="def-Media-Alternatives"></a>テキストのための代替メディア</dfn>：（直接又は代替テキストを介して）既にテキストで提示されている以上の情報を提示していないメディア。テキストのための代替メディアは、テキストの代替表現から恩恵を受ける人々のために提供される。テキストのための代替メディアは、オーディオのみ、ビデオのみ（手話によるビデオを包含する）もしくはオーディオビデオとすることができる。<br />
 </li>
@@ -1960,13 +1960,13 @@ UAAG 2.0 のコンテキストで重要な支援技術の例としては、以�
 <dt class="glossary"><a name="e" id="e"></a><a name="def-element" id="def-element"><dfn>要素（element）</dfn></a></dt>
 <dd class="glossary">主に、そのアプリケーション用の文書型定義（DTD）の構文構造である。これは XML 1.0 仕様（<cite><a href="#ref-XML" title="Link to reference XML">[XML]</a></cite> セクション 3）で用いられている意味である。また、UAAG 2.0 は、（例えば、特定の画像、映像、音声、見出し、リスト、またはリスト項目など）コンテンツ内の任意の個別単位を参照するために、「要素」という用語をより一般的に使用する。
 <ul>
-<li><a name="def-enabled-element" id="def-enabled-element"></a><dfn>有効な要素</dfn>：ユーザー インターフェース又は <a class="dfn-instance" href="#def-api" title="definition: Application Programming Interface (API)">API</a> を介してアクティブにできる関連付けられた振る舞いを持つ<a href="#def-element">要素</a> 。ユーザー エージェントが利用できる要素の集合は、一般に、実装されたマークアップ言語によって定義された<a class="dfn-instance" href="#def-element" title="definition: Interactive element">要素</a>の集合から導き出されるが、これに限定されない。</li>
+<li><a name="def-enabled-element" id="def-enabled-element"></a><dfn>有効な要素</dfn>：ユーザー インターフェース又は <a class="dfn-instance" href="#def-api" title="definition: Application Programming Interface (API)">API</a> を介してアクティブにできる関連付けられた振る舞いを持つ<a href="#def-element">要素</a>。ユーザー エージェントが利用できる要素の集合は、一般に、実装されたマークアップ言語によって定義された<a class="dfn-instance" href="#def-element" title="definition: Interactive element">要素</a>の集合から導き出されるが、これに限定されない。</li>
 <li><a name="def-disabled-element" id="def-disabled-element"></a><dfn>無効化された要素</dfn>：（例えば、「グレー表示」のメニュー項目）現在有効化されていない潜在的に有効化された要素。</li>
 <li><a name="def-element-type" id="def-element-type"><dfn>要素タイプ</dfn></a>：（画像、ビデオ、サウンド、第1レベルの見出し、リスト又はリスト項目など）要素のカテゴリ。</li>
 </ul>
 </dd>
 <dt class="glossary"><a name="def-event" id="def-event"><dfn>イベントとスクリプト、イベントハンドラ、イベントタイプ（events and scripting, event handler, event type）</dfn></a></dt>
-<dd class="glossary">ユーザー エージェントは、しばしば、ユーザー インターフェースのイベント、コンテンツの変更、コンテンツのロード又は<a class="dfn-instance" href="#def-operating-environment" title="definition: Operating environment">オペレーティング環境</a>からの要求を包含する、特定の「イベント タイプ」を持つイベントが発生すると、タスクを実行する。一部のマークアップ言語は、制作者が、特定のタイプのイベントが発生したとき、<a name="def-event-handler" id="def-event-handler"><dfn>イベント ハンドラ</dfn></a>と呼ばれるスクリプトを実行するように指定できる。イベント ハンドラは、スクリプト、マークアップ又は <a href="#def-dom" ><acronym title="Document Object Model">DOM</acronym></a> を介して<a name="def-explicit-handler" id="def-explicit-handler"><dfn>要素に明示的に関連付け</dfn></a>られる 。</dd>
+<dd class="glossary">ユーザー エージェントは、しばしば、ユーザー インターフェースのイベント、コンテンツの変更、コンテンツのロード又は<a class="dfn-instance" href="#def-operating-environment" title="definition: Operating environment">オペレーティング環境</a>からの要求を包含する、特定の「イベント タイプ」を持つイベントが発生すると、タスクを実行する。一部のマークアップ言語は、制作者が、特定のタイプのイベントが発生したとき、<a name="def-event-handler" id="def-event-handler"><dfn>イベント ハンドラ</dfn></a>と呼ばれるスクリプトを実行するように指定できる。イベント ハンドラは、スクリプト、マークアップ又は <a href="#def-dom" ><acronym title="Document Object Model">DOM</acronym></a> を介して<a name="def-explicit-handler" id="def-explicit-handler"><dfn>要素に明示的に関連付け</dfn></a>られる。</dd>
 <dt class="glossary"><dfn>有効化された要素（enabled element）</dfn></dt>
 <dd class="glossary"><a href="#def-element"><strong>要素</strong></a>を見よ。</dd>
 <dt class="glossary"><a name="def-user-request" id="def-user-request"><dfn>明示的なユーザー要求（explicit user request）</dfn></a></dt>
@@ -2048,14 +2048,14 @@ UAAG 2.0 のコンテキストで重要な支援技術の例としては、以�
 <dd class="glossary">任意の<a href="#def-user-agent" title="definition: user agent">ユーザー エージェント</a>が起動した、ユーザーからの決定又は情報の一部に対する要求。</dd>
 <dt class="glossary"><a name="def-Properties-and-Values"
   id="def-Properties-and-Values"><dfn>プロパティ、値、およびデフォルト（properties, values, and defaults）</dfn></a></dt>
-<dd class="glossary">ユーザー エージェントは、ドキュメント要素に書式化アルゴリズム及びスタイル情報を適用して、ドキュメントをレンダリングする。書式化は、（画面上、紙面上、スピーカー経由、点字ディスプレイ上、モバイルデバイス上など）ドキュメントがレンダリングされる場所を包含する多くの要因によって異なる。（例えば、フォント、色、合成音声韻律など）スタイル情報は、（例えば、HTML の特定のフォントやフレーズ要素など）要素そのもの、スタイル シート又はユーザー エージェント設定から得られる。これらのガイドラインの目的では、各書式又はスタイルオプションはプロパティによって管理され、各プロパティは有効な値のセットから1つの値を取ることができる。UAAG 2.0 は一般的に、用語「<a href="http://www.w3.org/TR/1998/REC-CSS2-19980512/conform.html">プロパティ</a>」は、<a href="http://www.w3.org/TR/CSS2/conform.html#property">CSS 2.1 適合性</a>（<cite><a href="#ref-CSS2" title="Link to reference CSS2">[CSS21]</a></cite>）に定義される意味を持つ。UAAG 2.0 の「スタイル」への言及は、スタイル関連のプロパティのセットを意味する。
+<dd class="glossary">ユーザー エージェントは、ドキュメント要素に書式化アルゴリズム及びスタイル情報を適用して、ドキュメントをレンダリングする。書式化は、（画面上、紙面上、スピーカー経由、点字ディスプレイ上、モバイルデバイス上など）ドキュメントがレンダリングされる場所を包含する多くの要因によって異なる。（例えば、フォント、色、合成音声韻律など）スタイル情報は、（例えば、HTML の特定のフォントやフレーズ要素など）要素そのもの、スタイルシート又はユーザー エージェント設定から得られる。これらのガイドラインの目的では、各書式又はスタイルオプションはプロパティによって管理され、各プロパティは有効な値のセットから1つの値を取ることができる。UAAG 2.0 は一般的に、用語「<a href="http://www.w3.org/TR/1998/REC-CSS2-19980512/conform.html">プロパティ</a>」は、<a href="http://www.w3.org/TR/CSS2/conform.html#property">CSS 2.1 適合性</a>（<cite><a href="#ref-CSS2" title="Link to reference CSS2">[CSS21]</a></cite>）に定義される意味を持つ。UAAG 2.0 の「スタイル」への言及は、スタイル関連のプロパティのセットを意味する。
 <ul>
 <li><a name="default-value" id="default-value"><dfn>デフォルト値</dfn></a>：インストール時にユーザー エージェントによってプロパティに与えられた値。</li>
 </ul>
 </dd>
 <dt class="glossary"><a name="r" id="r"></a><a name="def-recognize" id="def-recognize"><dfn>認識する（recognize）</dfn></a></dt>
 <dd class="glossary">ユーザー エージェントによって明確に識別できる情報またはイベント。<br />
-<a name="def-recognized-content" id="def-recognized-content"><dfn>認識されたコンテンツ</dfn></a>：ユーザー エージェントによって明瞭に認識される方法でコンテンツ内にコード化された情報。<a href="#def-author">制作者</a>は、マークアップ言語、スタイル シート言語、スクリプト言語又はプロトコルを包含する様々な方法で情報をエンコードする。ユーザー エージェントが確実に処理できるように情報がコード化されると、ユーザー エージェントは情報を「認識」できる。例えば、HTML では制作者が H1 要素で見出しを指定できるため、HTML を実装するユーザー エージェントは見出しとしてそのコンテンツを認識できる。（例えば、フォントサイズを大きくするなど）制作者が視覚効果だけを使用して見出しを作成した場合、制作者はユーザー エージェントが見出しとして認識できない方法で見出しをコード化している。UAAG 2.0 のいくつかの要件は、コンテンツの役割、コンテンツの関係、タイミングの関係及び制作者が提供する他の情報に依存する。これらの要件は、制作者がその情報をユーザー エージェントが認識できる方法でエンコードしたときにのみ適用される。適用に関する詳細は、<a href="#conformance">適合</a>のセクションを見よ。ユーザー エージェントは、制作者がマークアップ言語又はスタイル シート言語でコード化した情報に大きく依存する。<a class="dfn-instance" href="#def-script" title="definition: Script">スクリプト</a>でコード化された振る舞い、スタイル、意味及び馴染みのない XML 名前空間のマークアップは、ユーザー エージェントによって容易に、又は全く認識できない。<br />
+<a name="def-recognized-content" id="def-recognized-content"><dfn>認識されたコンテンツ</dfn></a>：ユーザー エージェントによって明瞭に認識される方法でコンテンツ内にコード化された情報。<a href="#def-author">制作者</a>は、マークアップ言語、スタイルシート言語、スクリプト言語又はプロトコルを包含する様々な方法で情報をエンコードする。ユーザー エージェントが確実に処理できるように情報がコード化されると、ユーザー エージェントは情報を「認識」できる。例えば、HTML では制作者が H1 要素で見出しを指定できるため、HTML を実装するユーザー エージェントは見出しとしてそのコンテンツを認識できる。（例えば、フォントサイズを大きくするなど）制作者が視覚効果だけを使用して見出しを作成した場合、制作者はユーザー エージェントが見出しとして認識できない方法で見出しをコード化している。UAAG 2.0 のいくつかの要件は、コンテンツの役割、コンテンツの関係、タイミングの関係及び制作者が提供する他の情報に依存する。これらの要件は、制作者がその情報をユーザー エージェントが認識できる方法でエンコードしたときにのみ適用される。適用に関する詳細は、<a href="#conformance">適合</a>のセクションを見よ。ユーザー エージェントは、制作者がマークアップ言語又はスタイルシート言語でコード化した情報に大きく依存する。<a class="dfn-instance" href="#def-script" title="definition: Script">スクリプト</a>でコード化された振る舞い、スタイル、意味及び馴染みのない XML 名前空間のマークアップは、ユーザー エージェントによって容易に、又は全く認識できない。<br />
 <a name="def-recognized-actions" id="def-recognized-actions"><dfn>認識されたアクション</dfn></a>：ユーザー エージェントによって明確に識別できるアクション又はイベント。これは、ユーザー、スクリプト、アドオン又はその他のソースによって開始されたアクションやイベントを包含できる。例えば、ユーザーがキーを押したときにキーボードフォーカスがウェブページ上にある場合、ユーザー エージェントはキーストロークを認識することができ、それに対応できる。ユーザーがキーを押したときにキーボードのフォーカスが埋め込まれたメディアプレーヤー上にある場合、ホストユーザー エージェントは、埋め込みアーキテクチャに応じて、キーストロークを検出できる場合と検出できない場合がある。同様に、ユーザーが type="submit" のある input 要素をアクティベートするとき、ユーザー エージェントはこれをフォーム送信のアクションとして認識し、サーバとの適切なやりとりを実行する。しかしながら、ページに「Submit **」とラベル付けされたボタンのようなカスタムコントロールが包含されているが、そのアクションが制作者の提供するスクリプトによって完全に処理される場合、ユーザー エージェントはユーザーアクションをフォーム送信に相当するものとして認識できない。新しいブラウザーウィンドウを開くなどのアクションは、ユーザー エージェントによって前々から実装されるため、ユーザーがボタンをクリックしたか又はブラウザー機能を呼び出すスクリプトによって起動したかに関わらず認識される。</dd>
 <dt class="glossary"><a name="def-reflow-content" id="def-reflow-content"><dfn>リフロー可能なコンテンツ（reflowable content）</dfn></a></dt>
 <dd class="glossary">複数の行に任意にラップすることができる<a href="#def-content">ウェブ コンテンツ</a>。リフロー可能なコンテンツの主な例外はグラフィックスと<a href="#def-video">ビデオ</a>である。</dd>
@@ -2067,7 +2067,7 @@ UAAG 2.0 のコンテキストで重要な支援技術の例としては、以�
 <li>制作者が指定したコンテンツ</li>
 <li>スクリプトによって作成または変更された動的コンテンツ</li>
 <li>（例えば、テキストの修復やリンク上のセキュリティ警告など）ユーザー エージェントによって挿入されたコンテンツ</li>
-<li>（例えば、順序付きリスト項目に先行する数字や文字、CSS コンテンツプロパティなど）スタイル シートやマークアップによって挿入されるコンテンツ</li>
+<li>（例えば、順序付きリスト項目に先行する数字や文字、CSS コンテンツプロパティなど）スタイルシートやマークアップによって挿入されるコンテンツ</li>
 </ul>
 <dfn><a name="def-rendered-text" id="def-rendered-text"></a>レンダリングされたテキスト</dfn>：視覚的または合成音声としても、文字自体に関する情報を伝達する方法でレンダリングされる<a class="dfn-instance" href="#def-text" title="definition: Text">テキスト</a>コンテンツ。</dd>
 <dt class="glossary"><a name="def-repair-content" id="def-repair-content"></a><dfn>修復コンテンツ（repair content）</dfn>、<a name="def-repair-text" id="def-repair-text"></a><dfn>修復テキスト（repair text）</dfn></dt>
@@ -2090,15 +2090,15 @@ UAAG 2.0 のコンテキストで重要な支援技術の例としては、以�
 <dd class="glossary"><a href="#def-user-agent">ユーザー エージェント</a>によって（例えば、スクリーン上、スピーカ経由、点字ディスプレイ経由など）レンダリングされるコンテンツ要素の（例えば、フォント、色、サイズ、位置、パディング、音量、合成音声韻律）プレゼンテーションを決定するプロパティ。スタイル プロパティにはいくつかの起源がある。
 <ul>
 <li><dfn><span class="glossary"><a name="def-user-agent-default-styles" id="def-user-agent-default-styles"></a></span>ユーザー エージェントのデフォルト スタイル</dfn>：デフォルトのスタイルプロパティ値は、制作者又はユーザー スタイルが存在しない場合に適用される。一部の<a href="#def-Web-Content-Technology">ウェブ コンテンツ技術</a>は、デフォルトのレンダリングが指定されているが、他はそうではない。</li>
-<li><dfn><a name="def-author-styles" id="def-author-styles"></a>制作者スタイル</dfn>：（例えば、インライン スタイル、<a href="#def-author-stylesheet">制作者スタイル シート</a>など ）コンテンツの一部として制作者によって設定されたスタイル プロパティ値。</li>
-<li><dfn><span class="glossary"><a name="def-user-styles" id="def-user-styles"></a></span>ユーザー スタイル</dfn>：（例えば、ユーザー エージェントのインターフェイス設定を介して、<a href="#def-user-stylesheet">ユーザー スタイル シート</a>など）ユーザーによって設定されたスタイル プロパティ値。</li>
+<li><dfn><a name="def-author-styles" id="def-author-styles"></a>制作者スタイル</dfn>：（例えば、インライン スタイル、<a href="#def-author-stylesheet">制作者スタイルシート</a>など ）コンテンツの一部として制作者によって設定されたスタイル プロパティ値。</li>
+<li><dfn><span class="glossary"><a name="def-user-styles" id="def-user-styles"></a></span>ユーザー スタイル</dfn>：（例えば、ユーザー エージェントのインターフェイス設定を介して、<a href="#def-user-stylesheet">ユーザー スタイルシート</a>など）ユーザーによって設定されたスタイル プロパティ値。</li>
 </ul>
 </dd>
-<dt class="glossary"><a name="def-style-profile" id="def-style-profile"></a><a name="def-stylesheet" id="def-stylesheet"></a><dfn>スタイル シート（style sheet）</dfn></dt>
-<dd class="glossary">スタイル プロパティの設定が、他のコンテンツ リソースから分離可能なウェブ コンテンツの<a href="#def-style-properties">スタイル プロパティ</a>設定を伝達するためのメカニズム。この分離は、制作者スタイル シートをトグル又は置換を可能にし、ユーザー スタイル シートは、複数のリソースに適用するように定義される。スタイル シートの<a href="#def-Web-Content-Technology">ウェブ コンテンツ技術</a>は、カスケーディング スタイル シート（CSS）及び拡張可能なスタイル シート言語（XSL）を包含する。
+<dt class="glossary"><a name="def-style-profile" id="def-style-profile"></a><a name="def-stylesheet" id="def-stylesheet"></a><dfn>スタイルシート（style sheet）</dfn></dt>
+<dd class="glossary">スタイル プロパティの設定が、他のコンテンツ リソースから分離可能なウェブ コンテンツの<a href="#def-style-properties">スタイル プロパティ</a>設定を伝達するためのメカニズム。この分離は、制作者スタイルシートをトグル又は置換を可能にし、ユーザー スタイルシートは、複数のリソースに適用するように定義される。スタイルシートの<a href="#def-Web-Content-Technology">ウェブ コンテンツ技術</a>は、カスケーディング スタイルシート（CSS）及び拡張可能なスタイルシート言語（XSL）を包含する。
 <ul>
-<li><dfn><a name="def-user-stylesheet" id="def-user-stylesheet"></a>ユーザー スタイル シート</dfn>：ウェブ コンテンツの制作者によって提供されないスタイル シート。ユーザー スタイル シートを構成するためのユーザー インターフェースは、上級ユーザーを対象とすることができる。</li>
-<li><dfn><a name="def-author-stylesheet" id="def-author-stylesheet"></a>制作者スタイル シート</dfn>：<a href="#def-author-styles">制作者スタイル</a>となる、制作者によって指定されたスタイル シート。</li>
+<li><dfn><a name="def-user-stylesheet" id="def-user-stylesheet"></a>ユーザー スタイルシート</dfn>：ウェブ コンテンツの制作者によって提供されないスタイルシート。ユーザー スタイルシートを構成するためのユーザー インターフェースは、上級ユーザーを対象とすることができる。</li>
+<li><dfn><a name="def-author-stylesheet" id="def-author-stylesheet"></a>制作者スタイルシート</dfn>：<a href="#def-author-styles">制作者スタイル</a>となる、制作者によって指定されたスタイルシート。</li>
 </ul>
 </dd>
 <dt class="glossary"><a id="def-synchronize" name="def-synchronize"></a><dfn>同期する（synchronize）</dfn></dt>
@@ -2164,7 +2164,7 @@ UAAG 2.0 でユーザー エージェントとみなされないソフトウェ�
 <dt class="glossary"><a name="def-view" id="def-view"></a><dfn>ビュー（view）</dfn></dt>
 <dd class="glossary">ユーザーがウェブ コンテンツとインタラクションできるようにするユーザー インターフェース機能。UAAG 2.0 は、次に包含するようなビューにコンテンツを表示する様々なアプローチを認識する。
 <ul>
-<li><a name="def-rendered-view" id="def-rendered-view"><dfn>レンダリングされたビュー </dfn></a>：レンダリング、再生又は実行されるようにコンテンツが提示されるビュー 。次の2つのサブタイプがある。
+<li><a name="def-rendered-view" id="def-rendered-view"><dfn>レンダリングされたビュー </dfn></a>：レンダリング、再生又は実行されるようにコンテンツが提示されるビュー。次の2つのサブタイプがある。
 <ul>
 <li>慣例的にレンダリングされたビューにおいて、コンテンツは、ウェブ コンテンツ技術仕様に従ってレンダリング、再生又は実行される。これは、多くのユーザー エージェントのデフォルトビューである。</li>
 <li>非慣例的にレンダリングされたビューにおいて、コンテンツは、（例えば、グラフィカルな波面としてオーディオ ファイルをレンダリングするなど）技術仕様で指定されているものとは全く異なるレンダリングをする。</li>
