@@ -220,7 +220,7 @@ ul.sc-notes {
 <dt>公開日:</dt>
 <dd>2017年12月21日</dd>
 <dt>更新日:</dt>
-<dd>2018年4月9日</dd>
+<dd>2018年4月12日</dd>
 <dt>翻訳者:</dt>
 <dd>Wataru Yoshimura</dd>
 </dl>
@@ -864,27 +864,27 @@ This document is also available in this non-normative format: <a href="mobile.ht
 <h5 class="implementing-heading"><a id="sc_131-a" name="sc_131-a"></a>適用対象：</h5>
 <p><a class="dfn-instance" href="#intro-applies-to-content-ui" title="definition: content user interface">コンテンツ ユーザー インターフェース</a>, <a class="dfn-instance" href="#intro-applies-to-config" title="definition: configuration settings">構成設定</a></p>
 <h5 class="implementing-heading"><a id="sc_131-t" name="sc_131-t"></a>一般的な実装対象：</h5>
-<p>operating system, browser, plugin, add-on</p>
+<p>オペレーティング システム、ブラウザー、プラグイン、アドオン</p>
 </div>
 <div class="implementing-section">
 <h5 class="implementing-heading"><a id="sc_131-i" name="sc_131-i"></a>達成基準 1.3.1 の意図：</h5>
-<p>Users need to be able to easily discover web content they can interact with. One effective way to do this is to highlight enabled elements and links (including recently visited links). Highlighted selection and content focus lets people who use keyboard, gesture and speech input  know where they are working. On some pages controls can be difficult to discern amid a large amount of other content, or can be styled so the controls are difficult to distinguish from other content. This can be particularly difficult for people with visual impairments, who may not be able to  distinguish subtle visual differences. People with some cognitive impairments can have difficulty distinguishing between items with similar or non-standard appearance. Visually distinguishing these items reduces the amount of time or number of commands these groups require to examine a page.</p>
+<p>ユーザーは、インタラクトできるウェブ コンテンツを容易に発見できる必要がある。これを行うある効果的な方法は、有効な要素と（最近訪問したリンクを包含する）リンクをハイライトすることである。ハイライトされたセクションとコンテンツのフォーカスによって、キーボード、ジェスチャー及び音声入力を使用する人々は、それらが動作している場所を知ることができる。一部のページでは、大量の他のコンテンツの中でコントロールを識別することが困難であるか、コントロールを他のコンテンツと区別するためにスタイルを設定するのが困難である。これは、視覚障害のある人にとっては特に困難で、微妙な視覚的な違いを区別することはできないだろう。一部の認知傷害のある人は、類似又は非標準的な外見をした項目を区別が困難である。これらの項目を視覚的に区別することで、これらのグループがページを調べるために必要な時間又はコマンドの数を減らすことができる。</p>
 <ul>
-<li><em>Note 1: </em>In addition to these required categories, it is recommended that user agents also allow the user to highlight the active viewport, even when it is a frame or similar within the active window. This makes it much easier for the user to visually locate the active focus.</li>
-<li><em>Note 2: </em>Platform conventions will dictate whether or not keyboard focus in an inactive viewport is visually indicated by an inactive cursor.</li>
-<li><em>Note 3: </em>the definition of visited and unvisited links is up to the user agent. Visited links can be links visited during the current session or in the browser's history. </li>
+<li><em>注 1：</em>これらの必要なカテゴリーに加えて、ユーザー エージェントはまた、アクティブなウィンドウ内で前後関係又は類似している時でも、ユーザーがアクティブなビューポートをハイライトできることを推奨する。これにより、ユーザーはアクティブなフォーカスの視覚的に見つけやすくなる。</li>
+<li><em>注 2：</em>プラットフォームの規則では、非アクティブなビューポート内のキーボード フォーカスが非アクティブなカーソルによって視覚的に示されるかどうかが決まる。</li>
+<li><em>注 3：</em>訪問済みリンクと未訪問リンクの定義は、ユーザー エージェントに任される。訪問済みリンクは、現在のセッション中又はブラウザーの履歴にリンクできる。</li>
 </ul>
 </div>
 
 <div class="implementing-section">
 <h5 class="implementing-heading"><a id="sc_131-e" name="sc_131-e"></a>達成基準 1.3.1 の例：</h5>
 <ul>
-<li class="unclassified-ex">Jerry has low vision.  He goes to a website that uses Cascading Style Sheets (CSS) to override visited link color. He wants to know what links have yet to be explored. The user agent provides a dialog box for setting overrides to author-selected link colors. Jerry uses the dialog box to override these so visited links are indicated.  </li>
-<li class="unclassified-ex">Jerry has low vision. He goes to a website with  styles that remove the content focus outline. The user agent provides a dialog box for setting overrides to the author's  focus outline declaration. Jerry uses the dialog box to display the content focus outline so he can tell where the focus is on the page. </li>
-<li class="unclassified-ex">Binh gets easily frustrated when he cannot locate the buttons and links on a page. This   happens when buttons and links don't have the standard appearance he's used to. The user agent provides a dialog box for setting overrides to author-selected link colors. Binh turns on the option to have all links appear in bright purple, and buttons drawn with a bright purple border so he can easily scan the page and find the items he's looking for. </li>
-<li class="mobile-ex">George has limited hand use and uses custom gestures on his mobile phone. He wants a visible focus indicator to know what element on the page has focus so when gestures are used on the mobile phone, he will know what element will be activated.</li>
-<li class="unclassified-ex">Aosa is blind. When rendering a web page using synthesized speech, the   user agent generates an audible tone to signify that the word being read is an   acronym, and Aosa can press the * key to hear the expansion. When   the phrase being read is the alt text for an image, another tone   indicates that Aosa can press + to hear the long description. </li>
-<li class="mobile-ex">Brin is deaf. The video player she is using has a button  displayed beneath the playing video that indicates   that captions are available. She clicks the button to toggle the captions on so she can understand the video.  On her mobile phone, Brin touches a video, which displays the controls including the &quot;display caption&quot; control. </li>
+<li class="unclassified-ex">Jerry はロービジョンである。彼は、訪問済みリンクの色を上書きするカスケーディング スタイル シート（CSS）を使用するウェブサイトに行く。彼は、どのリンクが未調査なのかを知りたい。ユーザー エージェントは、制作者が選択したリンク色の上書きを設定するダイアログ ボックスを提供する。Jerry は、これらを上書きするためにダイアログ ボックスを使用し、訪問済みリンクを表示する。</li>
+<li class="unclassified-ex">Jerry はロービジョンである。彼は、コンテンツ フォーカスの輪線を削除するスタイルのあるウェブサイトに行く。ユーザー エージェントは、著者によるフォーカスの輪線の宣言を上書きを設定するダイアログ ボックスを提供する。Jerry は、コンテンツ フォーカスの輪線を表示させるダイアログ ボックスを使用し、フォーカスがページ上のどこに在るのかを知ることができる。</li>
+<li class="unclassified-ex">Binh は、ページ上のボタンやリンクを見つけることができないとき、簡単に挫折する。これは、彼が使用している標準的な表現でないボタンやリンクのときに起きる。ユーザー エージェントは、制作者が選択したリンクの色の上書きを設定するダイアログ ボックスを提供する。Binh は、全てのリンクを明るい紫にするオプションをオンに、ボタンを明るい紫に描画して、彼はページを容易にスキャンでき、彼が探している項目を発見できる。</li>
+<li class="mobile-ex">George は、手の使用に制限があり、携帯電話は特別なジェスチャーを使用する。彼は、ページ上のどの要素にフォーカスがあるのかを知るために、目に見えるフォーカス インジケータを望んでおり、ジェスチャで携帯電話を使用するとき、彼は、どの要素がアクティブになるのかを知る。</li>
+<li class="unclassified-ex">Aosa は全盲である。合成音声を使用してウェブ ページをレンダリングするとき、ユーザー エージェントは、読んでいる単語が頭字語であり、Aosa が、展開して聞くために * キーを押すことができることを知らせる可聴音を生成する。読んでいるフレーズが、画像の代替テキストであるとき、他の音は、Aosa が、長い解説を聞くために + キーを押すことができることを示す。</li>
+<li class="mobile-ex">Brin はデフである。彼女が使用しているビデオ プレーヤーは、再生しているビデオの真下に、キャプションが利用可能であることを示すボタンを表示する。彼女は、ビデオを理解できるようにキャプションをオンにするためボタンをクリックする。彼女の携帯電話では、Brin は、ビデオをタッチし、「ディスプレイ キャプション」コントロールが包含されているコントロールを表示する。</li>
 </ul>
 </div>
 <div class="implementing-section">
